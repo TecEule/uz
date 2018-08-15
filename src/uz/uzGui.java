@@ -32,14 +32,14 @@ public class uzGui extends JFrame {
 	 */
 	public uzGui() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 742, 300);
+		setBounds(100, 100, 963, 300);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
 		
 		uzPanel uz = new uzPanel();
-		uz.setBounds(10, 10, 577, 55);
+		//uz.setBounds(10, 10, 577, 55);
 		uz.setVisible(true);
 		getContentPane().add(uz);
 		

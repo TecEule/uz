@@ -3,6 +3,9 @@ package uz;
 import javax.swing.JPanel;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
+
+import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Font;
 import java.text.DateFormat;
 import java.time.LocalDate;
@@ -22,11 +25,16 @@ public class uzPanel extends JPanel implements Runnable {
 	public uzPanel() {
 
 		setLayout(null);
-
+		setPreferredSize(new Dimension(806, 128));
+		setVisible(true);
+		
+		setBackground(Color.BLACK);
+		
 		lblUhrzeitDatum = new JLabel("New label");
 		lblUhrzeitDatum.setFont(new Font("Arial", Font.BOLD, 44));
+		lblUhrzeitDatum.setForeground(Color.WHITE);
 		lblUhrzeitDatum.setHorizontalAlignment(SwingConstants.RIGHT);
-		lblUhrzeitDatum.setBounds(10, 11, 806, 102);
+		lblUhrzeitDatum.setBounds(10, 11, 786, 102);
 		add(lblUhrzeitDatum);
 
 		akt = new Thread(this);
