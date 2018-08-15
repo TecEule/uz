@@ -7,9 +7,9 @@ import javax.swing.SwingConstants;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
-import java.text.DateFormat;
+
 import java.time.LocalDate;
-import java.time.LocalDateTime;
+
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
@@ -40,6 +40,16 @@ public class uzPanel extends JPanel implements Runnable {
 		akt = new Thread(this);
 		akt.start();
 
+	}
+	
+	public int getBreite()
+	{
+		return this.getWidth();
+	}
+	
+	public int getHoehe()
+	{
+		return this.getHeight();
 	}
 
 	private void initUhrzeitDatum() {
